@@ -10,8 +10,12 @@ featured game mode Ultra Rapide Fire.
 You downloaded the source and extracted it.
 Your server is configured so that the `./web` of the project is accessible by a browser.
 
+You need a database engine (mysql), with the rights to create a new database, or an empty database at your disposal.
+
 ### Composer
-Composer is required to build the project.
+[Composer](https://getcomposer.org/) is required to build the project.
+
+
 If you have curl :
 ```
 curl -sS https://getcomposer.org/installer | php
@@ -33,8 +37,6 @@ php app/console assets:install web --symlink && app/console assetic:dump
 You will likely need to fix the `./app/cache` and `./app/logs` folders permissions.
 
 #### Database
-The `./app/config/config.yml` must be updated to include your Riot Games API Key.
-
 To initiate the database and its structure :
 ```
 app/console doctrine:database:create
@@ -42,10 +44,18 @@ app/console doctrine:schema:create
 ```
 
 #### Data
+The `./app/config/config.yml` must be updated to include your Riot Games API Key.
+
 You will need to initiate the local champion data :
 ```
 app/console murf:static-champion-init
 ```
 
 The websites stores URF game sets returned by the api (api-challenge-v4.1) and uses them for the random series, but also as fallback if something goes wrong while loading the data from the API (too many connections ...). As a result, you should load a couple sets/series into your database. It's easy, just access this URL of your website dev environment : `http://yoursite.com/app_dev.php/api-set`.
+
+
 When moving to production, you should import some data from a test/dev environment to smooth things out.
+
+### Use it
+
+That's it, the site should be fully functionnal !
