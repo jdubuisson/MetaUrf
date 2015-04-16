@@ -1,0 +1,65 @@
+{% extends 'MopaBootstrapBundle::base.html.twig' %}
+
+ {% block head_style %}
+     {% stylesheets '@MurfWebsiteBundle/Resources/public/css/*' %}
+     <link rel="stylesheet" href="{{ asset_url }}"/>
+     {% endstylesheets %}
+
+     {% stylesheets
+     output='fonts/glyphicons-halflings-regular.ttf'
+     'bundles/murfwebsite/fonts/glyphicons-halflings-regular.ttf' %}{% endstylesheets %}
+     {% stylesheets
+     output='fonts/glyphicons-halflings-regular.eot'
+     'bundles/murfwebsite/fonts/glyphicons-halflings-regular.eot' %}{% endstylesheets %}
+     {% stylesheets
+     output='fonts/glyphicons-halflings-regular.svg'
+     'bundles/murfwebsite/fonts/glyphicons-halflings-regular.svg' %}{% endstylesheets %}
+     {% stylesheets
+     output='fonts/glyphicons-halflings-regular.woff'
+     'bundles/murfwebsite/fonts/glyphicons-halflings-regular.woff' %}{% endstylesheets %}
+     {% stylesheets
+     output='fonts/glyphicons-halflings-regular.woff2'
+     'bundles/murfwebsite/fonts/glyphicons-halflings-regular.woff2' %}{% endstylesheets %}
+ {% endblock head_style %}
+
+{% block foot_script_assetic %}
+    {% javascripts
+    '@MurfWebsiteBundle/Resources/public/js/jquery-1.11.2.min.js'
+    '@MurfWebsiteBundle/Resources/public/js/*' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock foot_script_assetic %}
+
+{% block title %}Meta URF{% endblock title %}
+
+{% block navbar %}
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ path('murf_website_homepage') }}">Meta Urf</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ path('murf_website_homepage') }}">Home</a></li>
+                    <li><a href="{{ path('murf_match_randomset') }}">Start a random series</a></li>
+                    <li><a href="{{ path('murf_match_apiset') }}">Start a series using the api</a></li>
+                    <li><a href="{{ path('murf_website_about') }}">About</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+{% endblock navbar %}
+
+{% block body_end %}
+{% endblock body_end %}
+
+

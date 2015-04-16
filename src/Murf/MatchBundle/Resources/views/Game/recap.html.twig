@@ -1,0 +1,38 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2 class="panel-title">{{ 'murf.game.recap'| trans }}</h2>
+    </div>
+
+    <div class="panel-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="lead text-center">
+                        {{ 'murf.game.end' | trans }}
+                    </p>
+                </div>
+            </div>
+
+            {% if app.session.get('numberOfGames') %}
+                {% if app.session.get('numberOfGames') >= (app.session.get('goodGuesses') + app.session.get('wrongGuesses')) %}
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-center">
+                                {{ 'murf.score' | trans({'%goodGuesses%':app.session.get('goodGuesses'), '%numberOfGames%':app.session.get('numberOfGames')}) }}
+                            </p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endif %}
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">
+                        {{ 'murf.game.share' | trans }}
+                        <span class="text-info">{{ url('murf_match_set', {'setId':set.id}) }}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

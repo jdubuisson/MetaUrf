@@ -1,0 +1,15 @@
+murf_match_game:
+    path:     /game/{gameId}
+    defaults: { _controller: MurfMatchBundle:Game:game }
+
+murf_match_set:
+    path:     /set/{setId}
+    defaults: { _controller: MurfMatchBundle:Set:set }
+
+murf_match_randomset:
+    path:     /random-set
+    defaults: { _controller: MurfMatchBundle:Set:randomSet }
+
+murf_match_apiset:
+    path:     /api-set
+    defaults: { _controller: MurfMatchBundle:Set:apiSet }

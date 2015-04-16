@@ -1,0 +1,63 @@
+{% extends 'MurfWebsiteBundle::layout.html.twig' %}
+
+
+{% block container %}
+    <div id="fullpage" class="home">
+        <div class="section urf explanations">
+            <div class="intro container rounded-img well">
+                <div class="row">
+                    <div class="col-md-8 text-center col-md-offset-2">
+                        <h1>{{ 'murf.home.urf.title' | trans }}</h1>
+
+                        <p>{{ 'murf.home.urf.lead' | trans }}</p>
+
+                        <p>{{ 'murf.home.urf.decription' | trans }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section meta explanations">
+            <div class="intro container rounded-img well">
+                <div class="row">
+                    <div class="col-md-8 text-center col-md-offset-2">
+                        <h1>{{ 'murf.home.meta.title' | trans }}</h1>
+
+                        <p>{{ 'murf.home.meta.lead' | trans }}</p>
+
+                        <p>{{ 'murf.home.meta.decription' | trans }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section murf explanations">
+            <div class="intro container rounded-img well">
+                <div class="row">
+                    <div class="col-md-8 text-center col-md-offset-2">
+                        <h1>{{ 'murf.home.murf.title' | trans }}</h1>
+
+                        <p>{{ 'murf.home.murf.lead' | trans }}</p>
+
+                        <p>{{ 'murf.home.murf.decription' | trans }}</p>
+
+                        <a href="{{ path('murf_match_apiset') }}" class="btn btn-lg btn-primary center-block">
+                            {{ 'murf.home.murf.try' | trans }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block body_end %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                navigation: true
+            });
+        });
+    </script>
+{% endblock body_end %}

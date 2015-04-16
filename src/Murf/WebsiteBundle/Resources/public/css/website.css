@@ -1,0 +1,21 @@
+.explanations {
+    background: url('../../bundles/murfwebsite/images/aprilfools_webarticle_nurfover.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    background-size:cover;
+}
+
+.meta.explanations {
+    background-image: url('../../bundles/murfwebsite/images/trailer_summoners.jpg');
+}
+
+.murf.explanations {
+    background-image: url('../../bundles/murfwebsite/images/aprilfools_webarticle_nurfconcession.jpg');
+}
+
+.explanations .intro{
+    background: rgba(245, 245, 245, 0.7);
+}
+
+.home p {
+    font-size: 16px;
+}

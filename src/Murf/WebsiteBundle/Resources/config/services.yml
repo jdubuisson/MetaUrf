@@ -1,0 +1,7 @@
+parameters:
+#    murf_website.example.class: Murf\WebsiteBundle\Example
+
+services:
+#    murf_website.example:
+#        class: %murf_website.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

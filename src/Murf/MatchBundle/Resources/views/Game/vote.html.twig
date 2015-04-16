@@ -1,0 +1,26 @@
+{% form_theme form 'MurfWebsiteBundle:Form:radio.html.twig' %}
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">{{ 'murf.game.vote'| trans }}</h2>
+    </div>
+
+    <div class="panel-body">
+
+        <div class="well-warning">
+            {{ 'murf.game.vote.help' | trans }}
+        </div>
+
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
+        <div class="clearfix center-block form-container">
+            {{ form_widget(form.team) }}
+        </div>
+        {{ form_rest(form) }}
+
+        <input type="submit" class="btn btn-lg btn-primary center-block"/>
+
+        {{ form_end(form) }}
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{% extends 'MurfWebsiteBundle::layout.html.twig' %}
+
+{% form_theme form 'MurfWebsiteBundle:Form:radio.html.twig' %}
+
+{% block container %}
+    <div class="container theme-showcase" role="main">
+
+        <!-- Main jumbotron : intro -->
+        <div class="jumbotron container">
+            <div class="col-sm-3">
+                <img src="{{ asset('bundles/murfwebsite/images/nurfbanner-cropped.jpg') }}"
+                     class="center-block img-responsive img-rounded" alt="VS">
+            </div>
+                <div class="col-sm-9">
+                <h1>{{ ('murf.set.start.title') | trans }}</h1>
+
+                <p>{{ ('murf.set.start.comment') | trans }}</p>
+            </div>
+        </div>
+
+        {{ include('MurfMatchBundle:Game:vote.html.twig', {'form': form}) }}
+
+    </div>
+
+{% endblock %}

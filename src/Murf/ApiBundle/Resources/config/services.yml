@@ -1,0 +1,57 @@
+imports:
+    - { resource: constants.yml }
+
+parameters:
+    dowdow_league_of_legends_api.caller_caller.class: Murf\ApiBundle\Caller\Caller
+    dowdow_league_of_legends_api.service_champion.class: Dowdow\LeagueOfLegendsAPIBundle\Service\ChampionService
+    dowdow_league_of_legends_api.service_game.class: Dowdow\LeagueOfLegendsAPIBundle\Service\GameService
+    dowdow_league_of_legends_api.service_league.class: Dowdow\LeagueOfLegendsAPIBundle\Service\LeagueService
+    dowdow_league_of_legends_api.service_lolstatus.class: Dowdow\LeagueOfLegendsAPIBundle\Service\LolStatusService
+    dowdow_league_of_legends_api.service_summoner.class: Dowdow\LeagueOfLegendsAPIBundle\Service\SummonerService
+    dowdow_league_of_legends_api.service_team.class: Dowdow\LeagueOfLegendsAPIBundle\Service\TeamService
+    
+    dowdow_league_of_legends_api.service_urf.class: Murf\ApiBundle\Service\UrfService
+    dowdow_league_of_legends_api.service_match.class: Murf\ApiBundle\Service\MatchService
+    dowdow_league_of_legends_api.service_staticchampion.class: Murf\ApiBundle\Service\StaticChampionService
+
+services:
+    dowdow_league_of_legends_api.caller_caller:
+        class: "%dowdow_league_of_legends_api.caller_caller.class%"
+        arguments: ['@service_container']
+
+    dowdow_league_of_legends_api.service_champion:
+        class: "%dowdow_league_of_legends_api.service_champion.class%"
+        arguments: ['@dowdow_league_of_legends_api.caller_caller','@service_container']
+
+    dowdow_league_of_legends_api.service_game:
+        class: "%dowdow_league_of_legends_api.service_game.class%"
+        arguments: ['@dowdow_league_of_legends_api.caller_caller','@service_container']
+
+    dowdow_league_of_legends_api.service_league:
+        class: "%dowdow_league_of_legends_api.service_league.class%"
+        arguments: ['@dowdow_league_of_legends_api.caller_caller','@service_container']
+
+    dowdow_league_of_legends_api.service_lolstatus:
+        class: "%dowdow_league_of_legends_api.service_lolstatus.class%"
+        arguments: ['@service_container']
+
+    dowdow_league_of_legends_api.service_summoner:
+        class: "%dowdow_league_of_legends_api.service_summoner.class%"
+        arguments: ['@dowdow_league_of_legends_api.caller_caller','@service_container']
+
+    dowdow_league_of_legends_api.service_team:
+        class: "%dowdow_league_of_legends_api.service_team.class%"
+        arguments: ['@dowdow_league_of_legends_api.caller_caller','@service_container']
+
+#my services
+    dowdow_league_of_legends_api.service_urf:
+        class: "%dowdow_league_of_legends_api.service_urf.class%"
+        arguments: ['@dowdow_league_of_legends_api.caller_caller','@service_container']
+
+    dowdow_league_of_legends_api.service_match:
+        class: "%dowdow_league_of_legends_api.service_match.class%"
+        arguments: ['@dowdow_league_of_legends_api.caller_caller','@service_container']
+
+    dowdow_league_of_legends_api.service_staticchampion:
+        class: "%dowdow_league_of_legends_api.service_staticchampion.class%"
+        arguments: ['@dowdow_league_of_legends_api.caller_caller','@service_container']

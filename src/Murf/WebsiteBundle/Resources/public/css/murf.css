@@ -1,0 +1,55 @@
+.team-label img {
+    float: left;
+}
+
+.game-feedback .team-label, .form-container {
+    max-width: 630px;
+    padding: 15px;
+}
+
+.vs {
+    width: 10%;
+    min-width: 50px;
+}
+
+.vs-container {
+    margin: 10px;
+}
+
+.champion-portrait {
+    width: 20%;
+}
+
+.img-container {
+    float: left;
+}
+
+.team-label input {
+    display: none;
+}
+
+input:checked + .img-container {
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(102, 174, 233, 1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(102, 174, 233, 1);
+    box-shadow: 0px 0px 10px 5px rgba(102, 174, 233, 1);
+}
+
+.well-warning {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #FCF8E3;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+.label.share {
+    font-size: 100%;
+}
+
+@media (max-width: 767px) {
+    .text-center-sm {
+        text-align: center;
+    }
+}

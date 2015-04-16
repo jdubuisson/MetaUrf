@@ -1,0 +1,68 @@
+{% extends 'MurfWebsiteBundle::layout.html.twig' %}
+
+
+{% block container %}
+    <div class="container">
+
+    <div class="col-sm-8 col-md-offset-2 text-center">
+        <h1>{{ 'murf.about.title' | trans }}</h1>
+    </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">{{ 'murf.about.lol-disclaimer.title'| trans }}</div>
+                <div class="panel-body">
+                    {{ 'murf.about.lol-disclaimer'| trans }}
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    {{ 'murf.about.lol-api-challenge'| trans }}
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><a href="http://symfony.com/">Symfony</a></div>
+                <div class="panel-body">
+                    {{ 'murf.about.symfony'| trans }}
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><a href="https://github.com/phiamo/MopaBootstrapBundle">MopaBootstrapBundle</a></div>
+                <div class="panel-body">
+                    {{ 'murf.about.mopa'| trans }}
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><a href="https://github.com/Dowdow/LeagueOfLegendsAPIBundle">LeagueOfLegendsAPIBundle</a></div>
+                <div class="panel-body">
+                    {{ 'murf.about.dowdow'| trans }}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading"><a href="http://getbootstrap.com/">Bootstrap</a></div>
+                <div class="panel-body">
+                    {{ 'murf.about.bootstrap'| trans }}
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><a href="http://glyphicons.com/">Glyphicons</a></div>
+                <div class="panel-body">
+                    {{ 'murf.about.glyphicons'| trans }}
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><a href="http://alvarotrigo.com/fullPage/">fullPage.js</a></div>
+                <div class="panel-body">
+                    {{ 'murf.about.fullpage'| trans }}
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    {{ 'murf.about.clean'| trans }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

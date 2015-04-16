@@ -1,0 +1,7 @@
+murf_website_homepage:
+    path:     /
+    defaults: { _controller: MurfWebsiteBundle:Default:index }
+
+murf_website_about:
+    path:     /about
+    defaults: { _controller: MurfWebsiteBundle:Default:about }

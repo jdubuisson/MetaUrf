@@ -1,0 +1,7 @@
+murf_website:
+    resource: "@MurfWebsiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+murf_match:
+    resource: "@MurfMatchBundle/Resources/config/routing.yml"
+    prefix:   /

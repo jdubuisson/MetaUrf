@@ -1,0 +1,6 @@
+services:
+    acme_demo.form.type.task:
+        class: Murf\MatchBundle\Form\Type\GameType
+        arguments: [ "@doctrine.orm.entity_manager" ]
+        tags:
+            - { name: form.type, alias: game }

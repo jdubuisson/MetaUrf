@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="92070044d8a98a59ab520fe00a384db5" resname="murf.home.urf.title">
+        <source>murf.home.urf.title</source>
+        <target>In the beginning, there was Urf</target>
+      </trans-unit>
+      <trans-unit id="9856c3293d5613c9efca0d5ce0723cd4" resname="murf.home.urf.lead">
+        <source>murf.home.urf.lead</source>
+        <target>The mighty manatee ruled over the Ultra Rapid Fire games.</target>
+      </trans-unit>
+      <trans-unit id="8262d73cd8a96c1d918c46e5d3999931" resname="murf.home.urf.decription">
+        <source>murf.home.urf.decription</source>
+        <target>He alone decided which team would emerge victorious, and which team would end up at the second place.</target>
+      </trans-unit>
+      <trans-unit id="fa7f364799742075274f7b747b1cc4cf" resname="murf.home.meta.title">
+        <source>murf.home.meta.title</source>
+        <target>Summoners were trying to decipher Urf's decisions</target>
+      </trans-unit>
+      <trans-unit id="204a50f98c38f9992ef33ad708cec5c6" resname="murf.home.meta.lead">
+        <source>murf.home.meta.lead</source>
+        <target>And thus was born the Meta !</target>
+      </trans-unit>
+      <trans-unit id="48128358d7869a3eeeda6911026a4d6c" resname="murf.home.meta.decription">
+        <source>murf.home.meta.decription</source>
+        <target>Summoners listed their opinions, based on experience or recent favorites.
+        All accross the globe, they shared this knowledge, trying to hone the Meta so it could be a reliable tool.
+        </target>
+      </trans-unit>
+      <trans-unit id="4a151e06f90cd911143df97df53634b2" resname="murf.home.murf.title">
+        <source>murf.home.murf.title</source>
+        <target>Do you master the Meta ?</target>
+      </trans-unit>
+      <trans-unit id="6b38cc6530316ad88a1d7873a8d84a0c" resname="murf.home.murf.lead">
+        <source>murf.home.murf.lead</source>
+        <target>How good is your knowledge of the Meta in Ultra rapide fire games ?</target>
+      </trans-unit>
+      <trans-unit id="881fb545ab8d47eae918582d7e417057" resname="murf.home.murf.decription">
+        <source>murf.home.murf.decription</source>
+        <target>This is your chance to test your Meta skills.
+        Can you choose the team that wan these Ultra Rapid Fire games ?
+        Are Urf's ways mysterious to you, or are you his prophet ?</target>
+      </trans-unit>
+      <trans-unit id="27da7a7bdbb08ae37ca9c0cdbe8218c2" resname="murf.home.murf.try">
+        <source>murf.home.murf.try</source>
+        <target>See for yourself !</target>
+      </trans-unit>
+      <trans-unit id="7452d24773c85957890f044b062d5785" resname="murf.about.lol-disclaimer">
+        <source>murf.about.lol-disclaimer</source>
+        <target>This website isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or
+                anyone officially involved in producing or managing League of Legends. League of Legends and Riot
+                Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</target>
+      </trans-unit>
+      <trans-unit id="2c311fa0e36f2141ac1fbad0e2bcdc2d" resname="murf.about.symfony">
+        <source>murf.about.symfony</source>
+        <target>This website is based on the symfony2 framework</target>
+      </trans-unit>
+      <trans-unit id="0f6c8a0965870955addbc7c3bac589f6" resname="murf.about.mopa">
+        <source>murf.about.mopa</source>
+        <target>phiamo/MopaBootstrapBundle brings the bootstrap HTML structure into Symfony</target>
+      </trans-unit>
+      <trans-unit id="daa4b96410daa56cd45ffc57926396f4" resname="murf.about.dowdow">
+        <source>murf.about.dowdow</source>
+        <target>Dowdow/LeagueOfLegendsAPIBundle provides the ground work for inegrating the API</target>
+      </trans-unit>
+      <trans-unit id="a9875045bca2b811e6c70bf302d4ffc5" resname="murf.about.lol-api-challenge">
+        <source>murf.about.lol-api-challenge</source>
+        <target>This project was built within "The Riot Games API Challenge"</target>
+      </trans-unit>
+      <trans-unit id="e1c6586907a7613729f6433d5aadf299" resname="murf.about.glyphicons">
+        <source>murf.about.glyphicons</source>
+        <target>Glyphicons are free to use with Bootstrap : check them out !</target>
+      </trans-unit>
+      <trans-unit id="73a9ec66ae2f0f01c9aa1c4a4a34f849" resname="murf.about.title">
+        <source>murf.about.title</source>
+        <target>About</target>
+      </trans-unit>
+      <trans-unit id="259df792946bf447b6662f480fbae6f5" resname="murf.about.bootstrap">
+        <source>murf.about.bootstrap</source>
+        <target>Bootstrap is a very nice HTML, CSS and JS framework. Thanks to it, this website is (should be ?) responsive !</target>
+      </trans-unit>
+      <trans-unit id="ac600028be7e00939655863f4bfa7a4b" resname="murf.about.lol-disclaimer.title">
+        <source>murf.about.lol-disclaimer.title</source>
+        <target>Disclaimer</target>
+      </trans-unit>
+      <trans-unit id="be53fbe51c67c67c57a3055782ee6dcd" resname="murf.about.fullpage">
+        <source>murf.about.fullpage</source>
+        <target>fullPage.js helps building scrolling websites. Check the Meta-Urf homepage for an example : each page section fits into the screen and changes cleanly on scroll.</target>
+      </trans-unit>
+      <trans-unit id="3c606751bd5a8509a57285815062bd60" resname="murf.about.clean">
+        <source>murf.about.clean</source>
+        <target>Now, the code needs some good cleanup and refactor...</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

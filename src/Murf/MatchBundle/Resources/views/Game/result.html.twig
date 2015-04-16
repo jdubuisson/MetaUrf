@@ -1,0 +1,87 @@
+{% extends 'MurfWebsiteBundle::layout.html.twig' %}
+
+{% block container %}
+    <div class="container theme-showcase" role="main">
+
+        <div class="alert alert-{{ result }}" role="alert">
+            <strong>{{ ('murf.vote.short.'~result) | trans }}</strong> {{ ('murf.vote.comment.'~result) | trans }}
+        </div>
+
+        {% if app.session.get('numberOfGames') %}
+            {% set successPerCent = 100*app.session.get('goodGuesses')/app.session.get('numberOfGames') %}
+            {% set errorPerCent = 100*app.session.get('wrongGuesses')/app.session.get('numberOfGames') %}
+
+            {% if app.session.get('numberOfGames') >= (app.session.get('goodGuesses') + app.session.get('wrongGuesses')) %}
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success"
+                         style="width: {{ successPerCent }}%">
+                        <span class="sr-only">{{ successPerCent }}% of success</span>
+                    </div>
+                    <div class="progress-bar progress-bar-danger"
+                         style="width: {{ errorPerCent }}%">
+                        <span class="sr-only">{{ errorPerCent }}% of error</span>
+                    </div>
+                </div>
+            {% endif %}
+        {% endif %}
+
+        <div class="panel panel-default game-feedback">
+            <div class="panel-heading">
+                <h2 class="panel-title">{{ 'murf.game'| trans }} {{ votedGame.matchId }} - {{ votedGame.region }}</h2>
+            </div>
+
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <!--  <h3>{{ ('murf.result.winners') | trans }}</h3> -->
+                        <div class="team-label clearfix center-block bg-success img-rounded">
+                            {% for champ in winners %}
+                                <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/{{ champ }}.png"
+                                     class="img-responsive champion-portrait" alt="{{ champ }}">
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% if result == 'success'%}
+                    <div class="col-sm-1 text-center-sm">
+                            {{ 'murf.team.your_choice' | trans }}
+                            <span aria-hidden="true" class="glyphicon glyphicon-thumbs-up"></span>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="row">
+                    <div class="clearfix vs-container">
+                        <img src="{{ asset('bundles/murfwebsite/images/vs.png') }}"
+                             class="center-block img-responsive vs img-rounded" alt="VS">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <!--  <h3>{{ ('murf.result.losers') | trans }}</h3> -->
+                        <div class="team-label clearfix center-block bg-danger img-rounded">
+                            {% for champ in losers %}
+                                <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/{{ champ }}.png"
+                                     class="img-responsive champion-portrait" alt="{{ champ }}">
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% if result != 'success'%}
+                        <div class="col-sm-1 text-center-sm">
+                            {{ 'murf.team.your_choice' | trans }}
+                            <span aria-hidden="true" class="glyphicon glyphicon-thumbs-down"></span>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        {% if form %}
+            {{ include('MurfMatchBundle:Game:vote.html.twig', {'form': form}) }}
+        {% else %}
+            {{ include('MurfMatchBundle:Game:recap.html.twig', {'set': votedGame.murfSet}) }}
+        {% endif %}
+
+
+    </div> <!-- /container -->
+
+{% endblock %}

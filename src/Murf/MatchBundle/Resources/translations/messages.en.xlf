@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="fd5bb9cc97c282f6b6393e854660e195" resname="murf.vote.short.success">
+        <source>murf.vote.short.success</source>
+        <target>Well done !</target>
+      </trans-unit>
+      <trans-unit id="a1e62053000e4fc5811f82191f28954c" resname="murf.vote.comment.success">
+        <source>murf.vote.comment.success</source>
+        <target>The team you picked was chosen by Urf as well</target>
+      </trans-unit>
+      <trans-unit id="68f4c042bd24501d0902d4eda0686582" resname="murf.vote.short.danger">
+        <source>murf.vote.short.danger</source>
+        <target>Oh no !</target>
+      </trans-unit>
+      <trans-unit id="30517005b13d065b435fbb4a5fce5a26" resname="murf.vote.comment.danger">
+        <source>murf.vote.comment.danger</source>
+        <target>Urf the mighty did not agree with you</target>
+      </trans-unit>
+      <trans-unit id="676405c61b2b886256b7a1442437298f" resname="murf.result.winners">
+        <source>murf.result.winners</source>
+        <target>These guys had Urf's blessing and won</target>
+      </trans-unit>
+      <trans-unit id="8e4d8b060bdf14cffc92aceba0ec7da7" resname="murf.result.losers">
+        <source>murf.result.losers</source>
+        <target>These guys were not blessed by Urf but they achieved second place</target>
+      </trans-unit>
+      <trans-unit id="45dd20224c94688247e09a37f1c90689" resname="murf.error.unknown_game">
+        <source>murf.error.unknown_game</source>
+        <target>You tried to access a game that doesn't exist. Sorry !</target>
+      </trans-unit>
+      <trans-unit id="e400db5f7a5a8d0d076610f0653cb8be" resname="murf.error.unknown_set">
+        <source>murf.error.unknown_set</source>
+        <target>You tried to access a set that doesn't exist. Sorry !</target>
+      </trans-unit>
+      <trans-unit id="5e33d11200b11c9605647dc1870fae60" resname="murf.set.start.title">
+        <source>murf.set.start.title</source>
+        <target>Evaluate a set of games</target>
+      </trans-unit>
+      <trans-unit id="06a8a36c09d8384f01f5329fe4bb8afc" resname="murf.set.start.comment">
+        <source>murf.set.start.comment</source>
+        <target>Do your best to pick the winning team of each U.R.F. game that will be presented to you. Let's see if you can decipher the meta deciced by Urf, the mighty manatee.</target>
+      </trans-unit>
+      <trans-unit id="b97539f31bddf46f19b8d9f32d7ece27" resname="murf.game.vote">
+        <source>murf.game.vote</source>
+        <target>Who won this game ?</target>
+      </trans-unit>
+      <trans-unit id="0983a40f533326b3fb319248f49c0899" resname="murf.game">
+        <source>murf.game</source>
+        <target>Game</target>
+      </trans-unit>
+      <trans-unit id="536450e55af2e9ef50cc11ccf0cf694d" resname="murf.game.vote.help">
+        <source>murf.game.vote.help</source>
+        <target>Click on the team that won in this game</target>
+      </trans-unit>
+      <trans-unit id="61db0aec4cc3f71ed3d4d19d494f03f5" resname="murf.game.recap">
+        <source>murf.game.recap</source>
+        <target>Series recap</target>
+      </trans-unit>
+      <trans-unit id="758e69fe2e4a0320b13c90de0ea61b1f" resname="murf.game.end">
+        <source>murf.game.end</source>
+        <target>You finished this series !</target>
+      </trans-unit>
+      <trans-unit id="37627284a68a898ced37c25a5802fee2" resname="murf.game.share">
+        <source>murf.game.share</source>
+        <target>Do you want to challenge a friend ? Give him/her this URL :</target>
+      </trans-unit>
+      <trans-unit id="25c7919182aecdf5cca1e2d285e56b5c" resname="murf.score">
+        <source>murf.score</source>
+        <target>You were right %goodGuesses% out of %numberOfGames% times.</target>
+      </trans-unit>
+      <trans-unit id="b4d9af6e03e8b9329c0fe37684548fe4" resname="murf.team.your_choice">
+        <source>murf.team.your_choice</source>
+        <target>You chose this team</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
