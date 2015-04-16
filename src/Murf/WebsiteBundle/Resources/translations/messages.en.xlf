@@ -92,6 +92,10 @@
         <source>murf.about.clean</source>
         <target>Now, the code needs some good cleanup and refactor...</target>
       </trans-unit>
+      <trans-unit id="9e60b3e07aad37b42efd85f4485beeea" resname="murf.about.github">
+        <source>murf.about.github</source>
+        <target>This project is available on GitHub</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
