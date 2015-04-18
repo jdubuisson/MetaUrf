@@ -24,7 +24,7 @@ class MurfSet
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="Game", mappedBy="murfSet")
+     * @ORM\OneToMany(targetEntity="Game", mappedBy="murfSet", cascade={"persist", "remove"})
      **/
     private $games;
 

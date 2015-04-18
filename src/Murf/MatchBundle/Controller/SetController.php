@@ -90,19 +90,13 @@ class SetController extends Controller
             }
             $em->persist($set);
             $em->flush();
-        } catch (RequestException $e) {
-            //very simple, but hacky :
-            //delete the set to avoid issues
-            $this->deleteSet($set, $em);
-            //redirect the user to a random game since we likely had an API request issue
             //TODO : dowdow doesn't seem to send the proper exception, we get a guzzle RequestException
-            return $this->redirect($this->generateUrl('murf_match_randomset'));
+        } catch (RequestException $e) {
+            return $this->manageSetCreationError($set, $em);
         }
         //empty set : we delete it and forward the user to a random set
-        if($set->getGames()->count() == 0)
-        {
-            $this->deleteSet($set, $em);
-            return $this->redirect($this->generateUrl('murf_match_randomset'));
+        if ($set->getGames()->count() == 0) {
+            return $this->manageSetCreationError($set, $em);
         }
 
         return $this->redirect($this->generateUrl('murf_match_set', array('setId' => $set->getId())));
@@ -122,16 +116,18 @@ class SetController extends Controller
     }
 
     /**
-     * cleanly deletes a set
+     * When an error occurs during a set creation :
+     * we delete it and forward the user to a random set
+     *
      * @param $set
+     * @param $em
+     *
+     * @return RedirectResponse
      */
-    protected function deleteSet($set, $em)
+    protected function manageSetCreationError($set, $em)
     {
-        foreach ($set->getGames() as $game) {
-            $em->remove($game);
-        }
-        $em->flush();
         $em->remove($set);
         $em->flush();
+        return $this->redirect($this->generateUrl('murf_match_randomset'));
     }
 }
