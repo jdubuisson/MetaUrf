@@ -67,8 +67,5 @@ assetic:
     filters:
         cssrewrite: ~
 
-dowdow_league_of_legends_api:
-    key:  fake-key
-
 mopa_bootstrap:
     form: true
