@@ -45,6 +45,7 @@ app/console doctrine:schema:create
 
 #### Data
 The `./app/config/config.yml` must be updated to include your Riot Games API Key.
+> This parameter was moved to `./app/config/parameters.yml` (created once you performed the `php composer.phar install` command.
 
 You will need to initiate the local champion data :
 ```
