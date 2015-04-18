@@ -1,8 +1,9 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "jdubuisson/meta-urf",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "A \"The Riot Games API Challenge\" entry where you can test your knowledge of the Meta",
+    "homepage": "https://github.com/jdubuisson/MetaUrf",
     "autoload": {
         "psr-0": { "": "src/" }
     },
